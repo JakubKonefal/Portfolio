@@ -1,25 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import NavbarTop from './Components/Navigation/NavbarTop/NavbarTop';
+import SideDrawer from './Components/Navigation/SideDrawer/SideDrawer';
+import Header from './Components/Header/Header';
+import About from './Components/About/About';
+import Skills from './Components/Skills/Skills';
+import Projects from './Components/Projects/Projects';
+import Contact from './Components/Contact/Contact';
+import Portfolio from './PortfolioPL/Portfolio';
+import { Route, Switch } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* <NavbarTop />
+      <SideDrawer />
+      <Header />
+      <About />
+      <Skills />
+      <Projects />
+      <Contact /> */}
+      <Switch>
+        <Route path="/" render={(props) => <Portfolio {...props} />} />
+        <Route path="/eng" render={(props) => <Portfolio {...props} />} />
+      </Switch>
+    </>
   );
 }
 

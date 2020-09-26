@@ -1,0 +1,316 @@
+@import '../../assets/colors/colors';
+@import '../../assets/mixins/mixins';
+
+.Header {
+  @include flexCenter(row);
+  position: relative;
+  height: 50vh;
+  padding: 2em 0 2em 25%;
+  min-height: 340px;
+}
+
+.Header__MyName {
+  position: absolute;
+  top: 12%;
+  left: 15%;
+  font-weight: 800;
+  font-size: 4rem;
+  letter-spacing: 2px;
+}
+
+.Header__AnimationWraper {
+  @include flexCenter(column);
+  position: relative;
+  height: 100%;
+}
+
+.Header__ComputerImg {
+  height: 80%;
+  min-height: 265px;
+  min-width: 320px;
+}
+
+.Header__ComputerScreen {
+  position: absolute;
+  top: 19.25%;
+  bottom: 41.3%;
+  left: 16%;
+  right: 16.5%;
+  overflow: hidden;
+  background-color: $color4;
+  z-index: 100;
+}
+
+.Header__AnimationElement_1 {
+  position: absolute;
+  top: -20%;
+  right: 5%;
+  width: 90%;
+  height: 3.5vh;
+  min-height: 24px;
+  animation: element1 9s infinite;
+}
+
+.Header__AnimationElement_2 {
+  position: absolute;
+  top: 22%;
+  width: 90%;
+  right: -100%;
+  height: 2vh;
+  min-height: 13px;
+  background-color: #db162f;
+  border-radius: 5px;
+  animation: element2 9s infinite;
+}
+
+.Header__AnimationElement_3 {
+  position: absolute;
+  top: 36%;
+  left: -100%;
+  width: 55%;
+  height: 7vh;
+  min-height: 47px;
+  background-color: #383961;
+  border-radius: 5px;
+  animation: element3 9s infinite;
+}
+
+.Header__AnimationElement_4 {
+  position: absolute;
+  top: 36%;
+  right: -100%;
+  width: 32%;
+  height: 7vh;
+  min-height: 47px;
+  background-color: #dbdfac;
+  border-radius: 5px;
+  animation: element4 9s infinite;
+}
+
+.Header__AnimationElement_5 {
+  position: absolute;
+  bottom: -30%;
+  right: 5%;
+  width: 90%;
+  height: 3vh;
+  min-height: 20px;
+  background-color: #3b1f2b;
+  border-radius: 5px;
+  animation: element5 9s infinite;
+}
+
+@keyframes element1 {
+  0% {
+    top: -20%;
+  }
+
+  50% {
+    top: -20%;
+  }
+
+  65% {
+    top: 1%;
+    right: 5%;
+  }
+
+  80% {
+    top: 1%;
+    right: 5%;
+  }
+
+  87% {
+    top: 1%;
+    right: -100%;
+  }
+
+  100% {
+    top: 1%;
+    right: -100%;
+  }
+}
+
+@keyframes element2 {
+  0% {
+    right: -100%;
+  }
+
+  15% {
+    right: 5%;
+  }
+
+  80% {
+    right: 5%;
+  }
+
+  87% {
+    right: -100%;
+  }
+
+  100% {
+    right: -100%;
+  }
+}
+
+@keyframes element3 {
+  0% {
+    left: -100%;
+  }
+
+  15% {
+    left: -100%;
+  }
+
+  35% {
+    left: 5%;
+  }
+
+  80% {
+    left: 5%;
+  }
+
+  87% {
+    left: 110%;
+  }
+
+  100% {
+    left: 110%;
+  }
+}
+
+@keyframes element4 {
+  0% {
+    right: -100%;
+  }
+
+  15% {
+    right: -100%;
+  }
+
+  35% {
+    right: 5%;
+  }
+
+  80% {
+    right: 5%;
+  }
+
+  87% {
+    right: -100%;
+  }
+
+  100% {
+    right: -100%;
+  }
+}
+
+@keyframes element5 {
+  0% {
+    bottom: -30%;
+  }
+
+  35% {
+    bottom: -30%;
+  }
+
+  50% {
+    bottom: 10%;
+  }
+
+  80% {
+    bottom: 10%;
+    right: 5%;
+  }
+
+  87% {
+    bottom: 10%;
+    right: -100%;
+  }
+
+  100% {
+    bottom: 10%;
+    right: -100%;
+  }
+}
+
+@media (max-width: 1600px) {
+  .Header {
+    padding-left: 30%;
+  }
+}
+
+@media (max-width: 1280px) {
+  .Header {
+    padding-left: 40%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .Header {
+    padding-left: 0;
+  }
+
+  .Header__MyName {
+    display: none;
+  }
+}
+
+@media (max-width: 896px) and (orientation: landscape) {
+  .Header {
+    height: 50vh;
+    padding: 0 0 1em;
+    min-height: 340px;
+  }
+}
+
+@media (max-width: 414px) and (orientation: portrait) {
+  .Header {
+    padding: 1em;
+  }
+
+  .Header__AnimationWraper {
+    height: 448px;
+    width: 325px;
+  }
+
+  .Header__ComputerImg {
+    height: unset;
+    max-width: 326px;
+    max-height: 268px;
+  }
+
+  .Header__ComputerScreen {
+    top: 27.25%;
+    bottom: 43.8%;
+  }
+
+  .Header__AnimationElement_1 {
+    min-height: 0;
+    height: 26px;
+  }
+
+  .Header__AnimationElement_2 {
+    min-height: 0;
+    height: 13px;
+  }
+
+  .Header__AnimationElement_3 {
+    min-height: 0;
+    height: 49px;
+  }
+
+  .Header__AnimationElement_4 {
+    min-height: 0;
+    height: 49px;
+  }
+
+  .Header__AnimationElement_5 {
+    min-height: 0;
+    height: 16px;
+  }
+}
+
+@media (max-width: 320px) and (orientation: portrait) {
+  .Header {
+    display: none;
+  }
+}

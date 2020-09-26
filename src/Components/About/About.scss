@@ -1,0 +1,95 @@
+@import '../../assets/colors/colors';
+@import '../../assets/mixins/mixins';
+
+.About {
+  position: relative;
+  @include flexCenter(row);
+  justify-content: flex-start;
+  min-height: 425px;
+  padding: 0 2em;
+  background-color: $color2;
+}
+
+.About__ScrollAnchor {
+  position: absolute;
+  top: -15%;
+  left: 0;
+}
+
+.About__Img {
+  height: 80%;
+  max-height: 340px;
+  max-width: 305px;
+}
+
+.About__Content {
+  @include flexCenter(column);
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 2em;
+}
+
+.About__Title {
+  color: $color4;
+}
+
+.About__Description {
+  color: $color4;
+  line-height: 165%;
+}
+
+@media (max-width: 1000px) {
+  .About__ScrollAnchor {
+    top: -12%;
+  }
+
+  .About__Img {
+    display: none;
+  }
+
+  .About__Content {
+    padding: 1em;
+  }
+}
+
+@media (max-width: 896px) and (orientation: landscape) {
+  .About__ScrollAnchor {
+    top: -8%;
+  }
+}
+
+@media (max-width: 812px) and (orientation: landscape) {
+  .About__ScrollAnchor {
+    top: -10%;
+  }
+}
+
+@media (max-width: 667px) and (orientation: landscape) {
+  .About__ScrollAnchor {
+    top: 0;
+  }
+}
+
+@media (max-width: 414px) and (orientation: portrait) {
+  .About__ScrollAnchor {
+    top: 5%;
+  }
+
+  .About__Title {
+    font-size: 1.25rem;
+  }
+
+  .About__Description {
+    font-size: 1.05rem;
+  }
+}
+
+@media (max-width: 375px) and (orientation: portrait) {
+  .About {
+    padding: 0 0.5em;
+  }
+}

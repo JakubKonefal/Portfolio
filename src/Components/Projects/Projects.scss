@@ -1,0 +1,141 @@
+@import '../../assets/colors/colors';
+@import '../../assets/mixins/mixins';
+
+.Projects {
+  @include flexCenter(column);
+  position: relative;
+  justify-content: flex-start;
+  width: 100%;
+  min-height: 500px;
+}
+
+.Projects__ScrollAnchor {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.Projects__Divider {
+  width: 80%;
+  border-top: 2px dashed $color2;
+}
+
+.Projects__Header {
+  @include flexCenter(row);
+  position: relative;
+  justify-content: flex-start;
+  width: 85%;
+  margin: 4em 0 1.5em;
+}
+
+.Projects__ProjectIcon {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  opacity: 0.35;
+  z-index: -10;
+}
+
+.Projects__Label {
+  margin-right: 1em;
+  padding-left: 70px;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.Projects__Number {
+  font-size: 3rem;
+  margin-left: 0.5em;
+  cursor: pointer;
+  &:hover {
+    font-weight: 600;
+    color: $color1;
+  }
+}
+
+@media (max-width: 1440px) {
+  .Projects__ProjectIcon {
+    transform: translateY(-50%) scale(0.9);
+  }
+
+  .Projects__Label {
+    font-size: 2.5rem;
+  }
+
+  .Projects__Number {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 1280px) {
+  .Projects__ProjectIcon {
+    transform: translateY(-50%) scale(0.825);
+  }
+
+  .Projects__Label {
+    font-size: 2.2rem;
+  }
+
+  .Projects__Number {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 667px) {
+  .Projects__ScrollAnchor {
+    top: 5%;
+  }
+
+  .Projects__ProjectIcon {
+    transform: translateY(-50%) scale(0.7);
+  }
+
+  .Projects__Label {
+    font-size: 1.8rem;
+  }
+
+  .Projects__Number {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 414px) and (orientation: portrait) {
+  .Projects__Header {
+    @include flexCenter(column);
+    align-items: flex-start;
+  }
+
+  .Projects__ProjectIcon {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    opacity: 0.35;
+    z-index: -10;
+  }
+
+  .Projects__Numbers {
+    @include flexCenter(row);
+    margin: 1em 0 0 50%;
+    border-bottom: 2px solid $color2;
+  }
+
+  .Projects__Number:first-child {
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 375px) and (orientation: portrait) {
+  .Projects__ProjectIcon {
+    transform: translateY(-55%) scale(0.6);
+  }
+
+  .Projects__Label {
+    font-size: 1.5rem;
+  }
+
+  .Projects__Number {
+    font-size: 1.65rem;
+  }
+}

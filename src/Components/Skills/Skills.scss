@@ -1,0 +1,130 @@
+@import '../../assets/mixins/mixins';
+@import '../../assets/colors/colors';
+
+.Skills {
+  position: relative;
+  @include flexCenter(column);
+  flex-wrap: wrap;
+  margin-top: 2em;
+}
+
+.Skills__ScrollAnchor {
+  position: absolute;
+  top: -22%;
+  left: 0;
+}
+
+.Skills__Header {
+  @include flexCenter(row);
+  justify-content: flex-start;
+  position: relative;
+  width: 80%;
+  height: 50px;
+  margin-bottom: 2em;
+}
+
+.Skills__HtmlTag {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -55%);
+  font-size: 6rem;
+  font-weight: 700;
+  color: $color2;
+  opacity: 0.35;
+  z-index: -10;
+}
+
+.Skills__Label {
+  margin-left: 0.25em;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.Skills__Icons {
+  @include flexCenter(row);
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1440px) {
+  .Skills__HtmlTag {
+    font-size: 5.5rem;
+  }
+
+  .Skills__Label {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 1280px) {
+  .Skills__HtmlTag {
+    font-size: 5.2rem;
+  }
+
+  .Skills__Label {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .Skills__ScrollAnchor {
+    top: -18%;
+  }
+}
+
+@media (max-width: 896px) and (orientation: landscape) {
+  .Skills__ScrollAnchor {
+    top: -10%;
+  }
+}
+
+@media (max-width: 667px) and (orientation: landscape) {
+  .Skills__ScrollAnchor {
+    top: -5%;
+  }
+
+  .Skills__HtmlTag {
+    font-size: 4.8rem;
+  }
+
+  .Skills__Label {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 568px) and (orientation: landscape) {
+  .Skills__ScrollAnchor {
+    top: -3%;
+  }
+}
+
+@media (max-width: 601px) and (orientation: portrait) {
+  .Skills__HtmlTag {
+    font-size: 4.8rem;
+    left: 20px;
+  }
+
+  .Skills__Label {
+    font-size: 2rem;
+    margin-left: 0.5em;
+  }
+}
+
+@media (max-width: 414px) and (orientation: portrait) {
+  .Skills__ScrollAnchor {
+    top: -4%;
+  }
+}
+
+@media (max-width: 375px) and (orientation: portrait) {
+  .Skills__HtmlTag {
+    font-size: 4.4rem;
+    left: 40px;
+  }
+
+  .Skills__Label {
+    font-size: 1.7rem;
+    margin-left: 1em;
+  }
+}
