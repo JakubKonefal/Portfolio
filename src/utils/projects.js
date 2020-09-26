@@ -9,8 +9,6 @@ import {
   mongodb,
   firebase,
   socketio,
-  sass,
-  rest,
   rwd,
 } from '../assets/img/skills';
 

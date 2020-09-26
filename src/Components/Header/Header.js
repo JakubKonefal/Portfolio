@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.scss';
-import ComputerImg from '../../assets/img/comp2.png';
+import ComputerImg from '../../assets/img/computer.png';
 import YourWebsiteLabel from '../../assets/img/your-website-label.png';
 
 const Header = () => {
