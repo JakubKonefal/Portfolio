@@ -9,7 +9,7 @@ const Project = ({
   useEffect(() => {
     setCurrentScreen(screens[0]);
     setCurrentLink(live[0]);
-  }, [screens]);
+  }, [screens, live]);
 
   const toggleCurrentScreen = ({ target }) => {
     const { src, tabIndex } = target;
