@@ -17,6 +17,19 @@
   transition: 0.3s;
 }
 
+.Navbar__CV {
+  position: absolute;
+  top: 50%;
+  left: 40px;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: $color4;
+  text-decoration: none;
+  &:visited {
+    color: $color4;
+  }
+}
+
 .Navbar__Flags {
   @include flexCenter(row);
   margin-left: 3em;

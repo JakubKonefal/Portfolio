@@ -2,7 +2,7 @@
 
 .SideDrawerItem {
   position: relative;
-  margin-bottom: 2em;
+  margin-bottom: 1.5em;
   color: $color4;
   cursor: pointer;
   &::after {
@@ -20,6 +20,18 @@
   }
   &:hover::after {
     background-color: $color4;
+  }
+}
+
+@media (max-width: 780px) and (orientation: landscape) {
+  .SideDrawerItem {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 667px) and (orientation: landscape) {
+  .SideDrawerItem {
+    font-size: 1.4rem;
   }
 }
 

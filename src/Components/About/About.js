@@ -11,7 +11,7 @@ const About = ({ language }) => {
   const paragraph = language === 'pl' ? about.paragraphPL : about.paragraphENG;
 
   return (
-    <section className="About">
+    <section className="About" data-aos="fade-up">
       <div className="About__ScrollAnchor" />
       <img className="About__Img" src={YoungPersonImg} alt="young-person" />
       <div className="About__Content">

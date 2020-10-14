@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './SideDrawer.scss';
+import { Tooltip } from '@material-ui/core';
 import SideDrawerItem from './SideDrawerItem';
 import { Close, Menu } from '@material-ui/icons';
 import { Link } from 'react-router-dom';
@@ -51,6 +52,15 @@ const SideDrawer = ({ language }) => {
       <SideDrawerItem onClick={scrollToProjects}>
         {language === 'pl' ? 'Projekty' : 'Projects'}
       </SideDrawerItem>
+      <Tooltip title="Download" placement="top">
+        <a
+          className="SideDrawer__CV"
+          href="https://srv-file21.gofile.io/downloadStore/srv-store2/2Cqspz/cv.pdf"
+          download
+        >
+          CV
+        </a>
+      </Tooltip>
       <div className="SideDrawer__Flags">
         <Link to="/">
           <img className="SideDrawer__Flag" src={PLflag} alt="pl" />

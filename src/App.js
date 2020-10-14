@@ -1,9 +1,17 @@
 import React from 'react';
 import './App.scss';
-import Portfolio from './PortfolioPL/Portfolio';
+import Portfolio from './Components/Portfolio/Portfolio';
 import { Route, Switch } from 'react-router-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function App() {
+  AOS.init({
+    easing: 'linear',
+    offset: 50,
+    delay: 50,
+  });
+
   return (
     <>
       <Switch>

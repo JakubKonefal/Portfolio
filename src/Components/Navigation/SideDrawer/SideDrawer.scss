@@ -49,6 +49,15 @@
     font-size: 3.3rem;
   }
 }
+.SideDrawer__CV {
+  margin-bottom: 1.5em;
+  color: $color4;
+  cursor: pointer;
+  text-decoration: none;
+  &:visited {
+    color: $color4;
+  }
+}
 
 .SideDrawer__Flags {
   @include flexCenter(row);
@@ -77,10 +86,58 @@
   }
 }
 
+@media (max-width: 780px) and (orientation: landscape) {
+  .SideDrawer__CV {
+    font-size: 1.4rem;
+  }
+
+  .SideDrawer__Flags {
+    margin-top: 0.5em;
+  }
+
+  .SideDrawer__Flag {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 667px) and (orientation: landscape) {
+  .SideDrawer__CV {
+    font-size: 1.4rem;
+  }
+
+  .SideDrawer__Flags {
+    margin-top: 0.5em;
+  }
+
+  .SideDrawer__Flag {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 800px) and (orientation: portrait) {
+  .SideDrawer__CV {
+    font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 601px) and (orientation: portrait) {
+  .SideDrawer__CV {
+    font-size: 2rem;
+  }
+}
+
 @media (max-width: 414px) and (orientation: portrait) {
   .SideDrawer__MenuIcon {
     top: 10px;
     left: 87.5%;
+  }
+}
+
+@media (max-width: 375px) and (orientation: portrait) {
+  .SideDrawer__Flags {
+    width: 30%;
   }
 }
 

@@ -25,7 +25,7 @@ const Skills = ({ language }) => {
   return (
     <section className="Skills">
       <div className="Skills__ScrollAnchor" />
-      <div className="Skills__Header">
+      <div className="Skills__Header" data-aos="fade-right">
         <span className="Skills__HtmlTag"> {'</>'} </span>
         <h3 className="Skills__Label">
           {language === 'pl' ? 'Umiejętności' : 'Skills'}

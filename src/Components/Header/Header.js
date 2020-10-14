@@ -6,7 +6,7 @@ import YourWebsiteLabel from '../../assets/img/your-website-label.png';
 const Header = () => {
   return (
     <header className="Header">
-      <h1 className="Header__MyName">
+      <h1 className="Header__MyName" data-aos="fade-right">
         Jakub <br /> Konefał
       </h1>
       <div className="Header__AnimationWraper">

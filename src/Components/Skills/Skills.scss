@@ -79,6 +79,12 @@
   }
 }
 
+@media (max-width: 780px) and (orientation: landscape) {
+  .Skills__ScrollAnchor {
+    top: -5%;
+  }
+}
+
 @media (max-width: 667px) and (orientation: landscape) {
   .Skills__ScrollAnchor {
     top: -5%;
@@ -99,6 +105,12 @@
   }
 }
 
+@media (max-width: 768px) and (orientation: portrait) {
+  .Skills__ScrollAnchor {
+    top: -5%;
+  }
+}
+
 @media (max-width: 601px) and (orientation: portrait) {
   .Skills__HtmlTag {
     font-size: 4.8rem;
@@ -114,6 +126,16 @@
 @media (max-width: 414px) and (orientation: portrait) {
   .Skills__ScrollAnchor {
     top: -4%;
+  }
+
+  .Skills__HtmlTag {
+    font-size: 4.5rem;
+    left: 24px;
+  }
+
+  .Skills__Label {
+    font-size: 1.7rem;
+    margin-left: 0.5em;
   }
 }
 

@@ -9,3 +9,6 @@ export const insta1 = require('./insta-1.png');
 export const insta2 = require('./insta-2.png');
 export const psd1 = require('./psd-1.png');
 export const psd2 = require('./psd-2.png');
+export const worldCountries1 = require('./world-countries-1.png');
+export const worldCountries2 = require('./world-countries-2.png');
+export const worldCountries3 = require('./world-countries-3.png');

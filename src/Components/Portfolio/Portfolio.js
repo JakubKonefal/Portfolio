@@ -1,11 +1,11 @@
 import React from 'react';
-import NavbarTop from '../Components/Navigation/NavbarTop/NavbarTop';
-import SideDrawer from '../Components/Navigation/SideDrawer/SideDrawer';
-import Header from '../Components/Header/Header';
-import About from '../Components/About/About';
-import Skills from '../Components/Skills/Skills';
-import Projects from '../Components/Projects/Projects';
-import Contact from '../Components/Contact/Contact';
+import NavbarTop from '../Navigation/NavbarTop/NavbarTop';
+import SideDrawer from '../Navigation/SideDrawer/SideDrawer';
+import Header from '../Header/Header';
+import About from '../About/About';
+import Skills from '../Skills/Skills';
+import Projects from '../Projects/Projects';
+import Contact from '../Contact/Contact';
 
 const Portfolio = ({ location: { pathname } }) => {
   const language = pathname === '/eng' ? 'eng' : 'pl';

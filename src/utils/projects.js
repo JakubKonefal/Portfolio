@@ -10,6 +10,8 @@ import {
   firebase,
   socketio,
   rwd,
+  rest,
+  sass,
 } from '../assets/img/skills';
 
 import {
@@ -24,6 +26,9 @@ import {
   insta2,
   psd1,
   psd2,
+  worldCountries1,
+  worldCountries2,
+  worldCountries3,
 } from '../assets/img/projects-screens/index';
 
 export const solarSystem = {
@@ -37,8 +42,9 @@ export const solarSystem = {
   },
   screens: [solar1, solar2],
   technologies: [html, css, javascript],
-  live: 'https://solar-system-model.netlify.app',
+  live: ['https://solar-system-model.netlify.app'],
   github: 'https://github.com/JakubKonefal/Solar-system',
+  number: 4,
 };
 
 export const chatApp = {
@@ -52,8 +58,9 @@ export const chatApp = {
   },
   screens: [chat1, chat2],
   technologies: [html, css, javascript, react, nodejs, express, socketio, rwd],
-  live: '',
+  live: ['https://chat-app3737.netlify.app/'],
   github: 'https://github.com/JakubKonefal/Chat-App',
+  number: 2,
 };
 
 export const teamManager = {
@@ -69,8 +76,9 @@ export const teamManager = {
   },
   screens: [teamManager1, teamManager2, teamManager3],
   technologies: [html, css, javascript, react, firebase],
-  live: 'https://team-manager-05f66f.netlify.app',
+  live: ['https://localcoach.netlify.app/'],
   github: 'https://github.com/JakubKonefal/Team-Manager',
+  number: 1,
 };
 
 export const instaClone = {
@@ -94,8 +102,9 @@ export const instaClone = {
     express,
     mongodb,
   ],
-  live: '',
-  github: '',
+  live: ['https://insta-clone37.netlify.app/'],
+  github: 'https://github.com/JakubKonefal/insta-clone',
+  number: 3,
 };
 
 export const psdToHtml = {
@@ -109,6 +118,35 @@ export const psdToHtml = {
   },
   screens: [psd1, psd2],
   technologies: [html, css, javascript, rwd],
-  live: '',
-  github: '',
+  live: [
+    'https://company-template-psd.netlify.app/',
+    'https://blog-template-psd.netlify.app/',
+  ],
+  github: 'https://github.com/JakubKonefal/WWW-templates',
+  number: 6,
 };
+
+export const worldCountries = {
+  title: {
+    PL: 'World Countries',
+    ENG: 'World Countries',
+  },
+  description: {
+    PL: 'Wizualizacja danych o krajach świata na podstawie API',
+    ENG: 'Data visualization based on world countries API',
+  },
+  screens: [worldCountries1, worldCountries2, worldCountries3],
+  technologies: [html, css, javascript, sass, rwd, rest],
+  live: ['https://world-countries37.netlify.app/'],
+  github: 'https://github.com/JakubKonefal/World-Countries',
+  number: 5,
+};
+
+export const projects = [
+  teamManager,
+  chatApp,
+  instaClone,
+  solarSystem,
+  worldCountries,
+  psdToHtml,
+];

@@ -8,13 +8,19 @@ const Project = ({
 }) => {
   useEffect(() => {
     setCurrentScreen(screens[0]);
+    setCurrentLink(live[0]);
   }, [screens]);
 
   const toggleCurrentScreen = ({ target }) => {
-    setCurrentScreen(target.src);
+    const { src, tabIndex } = target;
+    setCurrentScreen(src);
+    if (live[tabIndex]) {
+      setCurrentLink(live[tabIndex]);
+    }
   };
 
   const [currentScreen, setCurrentScreen] = useState(screens[0]);
+  const [currentLink, setCurrentLink] = useState(live[0]);
 
   return (
     <div className="Project">
@@ -27,11 +33,12 @@ const Project = ({
       <div className="Project__Overview">
         <div className="Project__Screens">
           <div className="Project__ScreensThumbnails">
-            {screens.map((screen) => (
+            {screens.map((screen, index) => (
               <img
                 className="Project__ScreenThumbnail"
                 key={screen}
                 src={screen}
+                tabIndex={index}
                 alt={title}
                 onClick={toggleCurrentScreen}
               />
@@ -44,7 +51,7 @@ const Project = ({
               alt="screen"
             />
             <div className="Project__CurrentScreenOverlay">
-              <a className="Project__Link" href={live}>
+              <a className="Project__Link" href={currentLink}>
                 <LiveTvOutlined /> Live
               </a>
               <a className="Project__Link" href={github}>

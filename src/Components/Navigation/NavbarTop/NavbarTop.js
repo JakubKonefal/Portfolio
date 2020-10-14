@@ -1,6 +1,7 @@
 import React from 'react';
 import './NavbarTop.scss';
 import NavbarItem from './NavbarItem';
+import { Tooltip } from '@material-ui/core';
 import PLflag from '../../../assets/img/pl-flag.png';
 import UKflag from '../../../assets/img/uk-flag.png';
 import { Link } from 'react-router-dom';
@@ -25,6 +26,15 @@ const NavbarTop = ({ language }) => {
 
   return (
     <nav className="Navbar">
+      <Tooltip title="Download" placement="top">
+        <a
+          className="Navbar__CV"
+          href="https://srv-file21.gofile.io/downloadStore/srv-store2/2Cqspz/cv.pdf"
+          download
+        >
+          CV
+        </a>
+      </Tooltip>
       <NavbarItem onClick={scrollToAbout}>
         {language === 'eng' ? 'About' : 'O mnie'}
       </NavbarItem>

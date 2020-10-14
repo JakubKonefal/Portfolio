@@ -68,6 +68,12 @@
   }
 }
 
+@media (max-width: 780px) and (orientation: landscape) {
+  .About__ScrollAnchor {
+    top: 5%;
+  }
+}
+
 @media (max-width: 667px) and (orientation: landscape) {
   .About__ScrollAnchor {
     top: 0;
@@ -76,15 +82,15 @@
 
 @media (max-width: 414px) and (orientation: portrait) {
   .About__ScrollAnchor {
-    top: 5%;
+    top: 2%;
   }
 
   .About__Title {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
   }
 
   .About__Description {
-    font-size: 1.05rem;
+    font-size: 1rem;
   }
 }
 

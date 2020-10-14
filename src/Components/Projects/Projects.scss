@@ -55,6 +55,11 @@
   }
 }
 
+.Projects__Number_Active {
+  font-weight: 600;
+  color: $color1;
+}
+
 @media (max-width: 1440px) {
   .Projects__ProjectIcon {
     transform: translateY(-50%) scale(0.9);
@@ -83,6 +88,12 @@
   }
 }
 
+@media (max-width: 780px) and (orientation: landscape) {
+  .Projects__ScrollAnchor {
+    top: 5%;
+  }
+}
+
 @media (max-width: 667px) {
   .Projects__ScrollAnchor {
     top: 5%;
@@ -101,6 +112,12 @@
   }
 }
 
+@media (max-width: 768px) and (orientation: portrait) {
+  .Projects__ScrollAnchor {
+    top: 5%;
+  }
+}
+
 @media (max-width: 414px) and (orientation: portrait) {
   .Projects__Header {
     @include flexCenter(column);
@@ -109,10 +126,15 @@
 
   .Projects__ProjectIcon {
     position: absolute;
-    top: 40%;
+    top: 35%;
     left: 0;
+    transform: translateY(-50%) scale(0.6);
     opacity: 0.35;
     z-index: -10;
+  }
+
+  .Projects__Label {
+    font-size: 1.55rem;
   }
 
   .Projects__Numbers {

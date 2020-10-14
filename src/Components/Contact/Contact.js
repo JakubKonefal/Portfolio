@@ -30,11 +30,19 @@ const Contact = ({ language }) => {
     )
       .then(() => {
         setSubmitProcessing(false);
-        setSubmitMessage('Message sent successfully!');
+        const message =
+          language === 'pl'
+            ? 'Wiadomość została wysłana!'
+            : 'Message sent successfully!';
+        setSubmitMessage(message);
       })
       .catch(() => {
         setSubmitProcessing(false);
-        setSubmitMessage('Error while submitting. Please try again.');
+        const message =
+          language === 'pl'
+            ? 'Błąd podczas wysyłania. Spróbuj ponownie'
+            : 'Error while submitting. Plesae try again';
+        setSubmitMessage(message);
       });
     e.target.reset();
   };
@@ -53,7 +61,13 @@ const Contact = ({ language }) => {
         <label className="Contact__InputLabel" htmlFor="name">
           <EmailOutlined className="Contact__Icon" /> Email
         </label>
-        <input className="Contact__Input" id="email" name="email" required />
+        <input
+          className="Contact__Input"
+          id="email"
+          type="email"
+          name="email"
+          required
+        />
         <label className="Contact__InputLabel" htmlFor="name">
           <MessageOutlined className="Contact__Icon" />{' '}
           {language === 'pl' ? 'Wiadomość' : 'Message'}
@@ -69,7 +83,7 @@ const Contact = ({ language }) => {
           {language === 'pl' ? 'Wyślij wiadomość' : 'Send message'}
         </button>
       </form>
-      <div className="Contact__Icons">
+      <div className="Contact__Icons" data-aos="fade-right">
         <span className="Contact__Item">
           <EmailOutlined className="Contact__ItemIcon" />
           konefaljakub@gmail.com
@@ -95,7 +109,8 @@ const Contact = ({ language }) => {
           <Spinner />
         ) : (
           <div className="Contact__ModalContent">
-            {submitMessage === 'Message sent successfully!' ? (
+            {submitMessage === 'Message sent successfully!' ||
+            'Wiadomość została wysłana!' ? (
               <CheckCircleOutline
                 style={{ fontSize: '2.3rem', color: 'green' }}
               />
