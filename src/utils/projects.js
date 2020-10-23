@@ -37,8 +37,10 @@ export const solarSystem = {
     ENG: 'Solar System',
   },
   description: {
-    PL: 'Model układu słonecznego we właściwej skali',
-    ENG: 'Model of our solar system in a proper scale',
+    PL:
+      'Interaktywno - edukacyjny model Układu Słonecznego we właściwej skali. Obrazuje rzeczywiste odległości i wielkości obiektów za pomocą symulacji prędkości światła, nawigacji pomiędzy obiektami czy zamianie jednostek, w których mierzona jest odległość.',
+    ENG:
+      'Interactive - educational model of our Solar System in a proper scale. Illustrates real distances and sizes of objects by simulating speed of light, navigating between objects, or changing units of distance.',
   },
   screens: [solar1, solar2],
   technologies: [html, css, javascript],
@@ -53,8 +55,10 @@ export const chatApp = {
     ENG: 'Chat - App',
   },
   description: {
-    PL: 'Czat z ogólnym pokojem i prywatnymi wiadomościami',
-    ENG: 'Chat with one room and private messages',
+    PL:
+      'Aplikacja umożliwiająca komunikację w czasie rzeczywistym z innymi użytkownikami za pomocą protokołu WebSocket. Pozwala na wysyłanie tekstu, obrazów i emotikonów zarówno na czacie "ogólnym" jak i w wiadomości prywatnej. ',
+    ENG:
+      'An application that enables real-time communication with other users via the WebSocket protocol. It allows you to send text, pictures and emoticons both in "general" chat and in private message.',
   },
   screens: [chat1, chat2],
   technologies: [html, css, javascript, react, nodejs, express, socketio, rwd],
@@ -70,9 +74,9 @@ export const teamManager = {
   },
   description: {
     PL:
-      'Menedżer drużyny piłkarskiej pozwalający tworzyć zawodników, treningi i zadania',
+      'Wirtualny menedżer piłkarski pozwalający na stworzenie konta i zarządzanie swoimi drużynami. Przechowuje informacje dotyczące każdego z zawodników oraz zaplanowanych treningów w obrębie drużyny. Tworzenie całych serii treningów sprawia, że planowanie jest szybkie, a szczegółowy opis każdego treningu umożliwia bardziej precyzyjne kształtowanie stylu prowadzonej drużyny.',
     ENG:
-      'Football team manager allowing to create players, trainings and tasks',
+      'Virtual football manager that allows you to create an account and manage your teams. It stores information about each player and planned training sessions within the team. Creating a whole series of training sessions makes planning quick, and a detailed description of each training session allows you to shape the style of your team more precisely.',
   },
   screens: [teamManager1, teamManager2, teamManager3],
   technologies: [html, css, javascript, react, firebase],
@@ -87,8 +91,10 @@ export const instaClone = {
     ENG: 'Instagram clone',
   },
   description: {
-    PL: 'Uproszczony klon Instagramu zawierający jego podstawowe funkcje',
-    ENG: 'Simplified clone of Instagram with its basic functionalities',
+    PL:
+      'Uproszczony klon Instagramu zawierający jego podstawowe funkcje, takie jak: tworzenie profilu wraz ze zdjęciem, dodawanie postów, przeglądanie tablicy, obserwowanie profili innych użytkowników, "lajkowanie" postów czy komentowanie.',
+    ENG:
+      "Simplified clone of Instagram containing its basic functionalities, such as: creating profile with a photo, adding posts, viewing the board, following other users's profiles, liking posts or commenting.",
   },
   screens: [insta1, insta2],
   technologies: [
@@ -113,8 +119,9 @@ export const psdToHtml = {
     ENG: 'WWW Templates',
   },
   description: {
-    PL: 'Szablony WWW stworzone na podstawie plików PSD',
-    ENG: 'WWW templates created from PSD files',
+    PL:
+      'Responsywne szablony stron internetowych stworzonych na podstawie plików PSD.',
+    ENG: 'Responsive website templates based on PSD files.',
   },
   screens: [psd1, psd2],
   technologies: [html, css, javascript, rwd],
@@ -132,8 +139,10 @@ export const worldCountries = {
     ENG: 'World Countries',
   },
   description: {
-    PL: 'Wizualizacja danych o krajach świata na podstawie API',
-    ENG: 'Data visualization based on world countries API',
+    PL:
+      'Serwis wykorzystujący publiczne API, prezentujący podstawowe dane na temat wszystkich krajów świata w formie wykresów. Umożliwia także wyszukiwanie dowolnego kraju i przeglądanie informacji na jego temat.',
+    ENG:
+      'Website using the public API, presenting basic data on all countries of the world in the form of charts. It also allows you to search for every single country and view information about it.',
   },
   screens: [worldCountries1, worldCountries2, worldCountries3],
   technologies: [html, css, javascript, sass, rwd, rest],
