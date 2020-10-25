@@ -1,1 +1,1 @@
-My portfolio [portfolio](https://portfolio-jkonefal.netlify.app/).
+My [portfolio](https://portfolio-jkonefal.netlify.app/).
