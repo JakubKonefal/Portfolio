@@ -11,6 +11,7 @@ import {
   PhoneAndroidOutlined,
 } from '@material-ui/icons';
 import { Modal } from '@material-ui/core';
+import cv from '../../assets/cv/CV.pdf';
 import Spinner from './Spinner';
 
 const Contact = ({ language }) => {
@@ -81,6 +82,16 @@ const Contact = ({ language }) => {
         />
         <button className="Contact__Button" type="submit">
           {language === 'pl' ? 'Wyślij wiadomość' : 'Send message'}
+        </button>
+        <button className="Contact__Button">
+          CV
+          <a
+            className="Contact__CVButton"
+            href={cv}
+            download="CV_Jakub_Konefal_Junior_Frontend_Developer"
+          >
+            {language === 'pl' ? 'Pobierz CV' : 'Download CV'}
+          </a>
         </button>
       </form>
       <div className="Contact__Icons" data-aos="fade-right">

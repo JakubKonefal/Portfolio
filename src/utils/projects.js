@@ -31,6 +31,42 @@ import {
   worldCountries3,
 } from '../assets/img/projects-screens/index';
 
+export const teamManager = {
+  title: {
+    PL: 'LocalCoach',
+    ENG: 'LocalCoach',
+  },
+  description: {
+    PL:
+      'Wirtualny menedżer piłkarski pozwalający na stworzenie konta i zarządzanie swoimi drużynami. Przechowuje informacje dotyczące każdego z zawodników oraz zaplanowanych treningów w obrębie drużyny. Tworzenie całych serii treningów sprawia, że planowanie jest szybkie, a szczegółowy opis każdego treningu umożliwia bardziej precyzyjne kształtowanie stylu prowadzonej drużyny.',
+    ENG:
+      'Virtual football manager that allows you to create an account and manage your teams. It stores information about each player and planned training sessions within the team. Creating a whole series of training sessions makes planning quick, and a detailed description of each training session allows you to shape the style of your team more precisely.',
+  },
+  screens: [teamManager1, teamManager2, teamManager3],
+  technologies: [html, css, javascript, react, firebase],
+  live: ['https://localcoach.netlify.app/'],
+  github: 'https://github.com/JakubKonefal/Team-Manager',
+  number: 1,
+};
+
+export const worldCountries = {
+  title: {
+    PL: 'World Countries',
+    ENG: 'World Countries',
+  },
+  description: {
+    PL:
+      'Serwis wykorzystujący publiczne API, prezentujący podstawowe dane na temat wszystkich krajów świata w formie wykresów. Umożliwia także wyszukiwanie dowolnego kraju i przeglądanie informacji na jego temat.',
+    ENG:
+      'Website using the public API, presenting basic data on all countries of the world in the form of charts. It also allows you to search for every single country and view information about it.',
+  },
+  screens: [worldCountries1, worldCountries2, worldCountries3],
+  technologies: [html, css, javascript, sass, rwd, rest],
+  live: ['https://world-countries37.netlify.app/'],
+  github: 'https://github.com/JakubKonefal/World-Countries',
+  number: 2,
+};
+
 export const solarSystem = {
   title: {
     PL: 'Układ Słoneczny',
@@ -46,7 +82,7 @@ export const solarSystem = {
   technologies: [html, css, javascript],
   live: ['https://solar-system-model.netlify.app'],
   github: 'https://github.com/JakubKonefal/Solar-system',
-  number: 4,
+  number: 3,
 };
 
 export const chatApp = {
@@ -64,25 +100,7 @@ export const chatApp = {
   technologies: [html, css, javascript, react, nodejs, express, socketio, rwd],
   live: ['https://chat-app3737.netlify.app/'],
   github: 'https://github.com/JakubKonefal/Chat-App',
-  number: 2,
-};
-
-export const teamManager = {
-  title: {
-    PL: 'LocalCoach',
-    ENG: 'LocalCoach',
-  },
-  description: {
-    PL:
-      'Wirtualny menedżer piłkarski pozwalający na stworzenie konta i zarządzanie swoimi drużynami. Przechowuje informacje dotyczące każdego z zawodników oraz zaplanowanych treningów w obrębie drużyny. Tworzenie całych serii treningów sprawia, że planowanie jest szybkie, a szczegółowy opis każdego treningu umożliwia bardziej precyzyjne kształtowanie stylu prowadzonej drużyny.',
-    ENG:
-      'Virtual football manager that allows you to create an account and manage your teams. It stores information about each player and planned training sessions within the team. Creating a whole series of training sessions makes planning quick, and a detailed description of each training session allows you to shape the style of your team more precisely.',
-  },
-  screens: [teamManager1, teamManager2, teamManager3],
-  technologies: [html, css, javascript, react, firebase],
-  live: ['https://localcoach.netlify.app/'],
-  github: 'https://github.com/JakubKonefal/Team-Manager',
-  number: 1,
+  number: 4,
 };
 
 export const instaClone = {
@@ -110,7 +128,7 @@ export const instaClone = {
   ],
   live: ['https://insta-clone37.netlify.app/'],
   github: 'https://github.com/JakubKonefal/insta-clone',
-  number: 3,
+  number: 5,
 };
 
 export const psdToHtml = {
@@ -133,29 +151,11 @@ export const psdToHtml = {
   number: 6,
 };
 
-export const worldCountries = {
-  title: {
-    PL: 'World Countries',
-    ENG: 'World Countries',
-  },
-  description: {
-    PL:
-      'Serwis wykorzystujący publiczne API, prezentujący podstawowe dane na temat wszystkich krajów świata w formie wykresów. Umożliwia także wyszukiwanie dowolnego kraju i przeglądanie informacji na jego temat.',
-    ENG:
-      'Website using the public API, presenting basic data on all countries of the world in the form of charts. It also allows you to search for every single country and view information about it.',
-  },
-  screens: [worldCountries1, worldCountries2, worldCountries3],
-  technologies: [html, css, javascript, sass, rwd, rest],
-  live: ['https://world-countries37.netlify.app/'],
-  github: 'https://github.com/JakubKonefal/World-Countries',
-  number: 5,
-};
-
 export const projects = [
   teamManager,
+  worldCountries,
+  solarSystem,
   chatApp,
   instaClone,
-  solarSystem,
-  worldCountries,
   psdToHtml,
 ];

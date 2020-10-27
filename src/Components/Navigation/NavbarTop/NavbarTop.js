@@ -28,7 +28,11 @@ const NavbarTop = ({ language }) => {
   return (
     <nav className="Navbar">
       <Tooltip title="Download" placement="top">
-        <a className="Navbar__CV" href={cv} download>
+        <a
+          className="Navbar__CV"
+          href={cv}
+          download="CV_Jakub_Konefal_Junior_Frontend_Developer"
+        >
           CV
         </a>
       </Tooltip>

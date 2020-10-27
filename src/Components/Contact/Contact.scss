@@ -4,7 +4,6 @@
 .Contact {
   @include flexCenter(column);
   position: relative;
-  // height: 80vh;
   min-height: 750px;
   margin-top: 2em;
   padding: 15vh 0 5vh;
@@ -26,6 +25,7 @@
 }
 
 .Contact__Header {
+  position: relative;
   font-size: 2rem;
   color: $color4;
   text-transform: uppercase;
@@ -79,7 +79,9 @@
 }
 
 .Contact__Button {
+  position: relative;
   width: 63%;
+  margin-bottom: 15px;
   padding: 1em;
   border: none;
   border-radius: 10px;
@@ -90,6 +92,23 @@
   letter-spacing: 1px;
   outline: none;
   cursor: pointer;
+  transition: 0.3s;
+  &:hover {
+    background-color: $color3-hover;
+  }
+}
+
+.Contact__CVButton {
+  @include flexCenter(column);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: $color3;
+  border-radius: 10px;
+  text-decoration: none;
+  color: $color4;
   transition: 0.3s;
   &:hover {
     background-color: $color3-hover;
