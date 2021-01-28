@@ -12,6 +12,7 @@ import {
 } from '@material-ui/icons';
 import { Modal } from '@material-ui/core';
 import cv from '../../assets/cv/CV.pdf';
+import cvEnglish from '../../assets/cv/CV-English.pdf';
 import Spinner from './Spinner';
 
 const Contact = ({ language }) => {
@@ -23,12 +24,7 @@ const Contact = ({ language }) => {
     e.preventDefault();
     setModalOpen(true);
     setSubmitProcessing(true);
-    sendForm(
-      'gmail',
-      'template_vegeglh',
-      e.target,
-      'user_0synUJOJ7grlbPr8Dx8rD'
-    )
+    sendForm('gma', 'template_vegeglh', e.target, 'user_0synUJOJ7grlbPr8Dx8rD')
       .then(() => {
         setSubmitProcessing(false);
         const message =
@@ -41,8 +37,8 @@ const Contact = ({ language }) => {
         setSubmitProcessing(false);
         const message =
           language === 'pl'
-            ? 'Błąd podczas wysyłania. Spróbuj ponownie'
-            : 'Error while submitting. Plesae try again';
+            ? 'Błąd podczas wysyłania. Spróbuj ponownie!'
+            : 'Error while submitting. Plesae try again!';
         setSubmitMessage(message);
       });
     e.target.reset();
@@ -87,7 +83,7 @@ const Contact = ({ language }) => {
           CV
           <a
             className="Contact__CVButton"
-            href={cv}
+            href={language === 'pl' ? cv : cvEnglish}
             download="CV_Jakub_Konefal_Junior_Frontend_Developer"
           >
             {language === 'pl' ? 'Pobierz CV' : 'Download CV'}
@@ -120,8 +116,8 @@ const Contact = ({ language }) => {
           <Spinner />
         ) : (
           <div className="Contact__ModalContent">
-            {submitMessage === 'Message sent successfully!' ||
-            'Wiadomość została wysłana!' ? (
+            {submitMessage ===
+            ('Message sent successfully!' || 'Wiadomość została wysłana!') ? (
               <CheckCircleOutline
                 style={{ fontSize: '2.3rem', color: 'green' }}
               />

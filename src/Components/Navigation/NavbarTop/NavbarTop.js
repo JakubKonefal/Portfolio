@@ -6,6 +6,7 @@ import PLflag from '../../../assets/img/pl-flag.png';
 import UKflag from '../../../assets/img/uk-flag.png';
 import { Link } from 'react-router-dom';
 import cv from '../../../assets/cv/CV.pdf';
+import cvEnglish from '../../../assets/cv/CV-English.pdf';
 
 const NavbarTop = ({ language }) => {
   const scrollToAbout = () => {
@@ -30,7 +31,7 @@ const NavbarTop = ({ language }) => {
       <Tooltip title="Download" placement="top">
         <a
           className="Navbar__CV"
-          href={cv}
+          href={language === 'eng' ? cvEnglish : cv}
           download="CV_Jakub_Konefal_Junior_Frontend_Developer"
         >
           CV

@@ -8,6 +8,7 @@ import PLflag from '../../../assets/img/pl-flag.png';
 import UKflag from '../../../assets/img/uk-flag.png';
 import StylesProvider from '@material-ui/styles/StylesProvider';
 import cv from '../../../assets/cv/CV.pdf';
+import cvEnglish from '../../../assets/cv/CV-English.pdf';
 
 const SideDrawer = ({ language }) => {
   const [sideDrawerOpen, toggleSideDrawer] = useState(false);
@@ -54,7 +55,11 @@ const SideDrawer = ({ language }) => {
         {language === 'pl' ? 'Projekty' : 'Projects'}
       </SideDrawerItem>
       <Tooltip title="Download" placement="top">
-        <a className="SideDrawer__CV" href={cv} download>
+        <a
+          className="SideDrawer__CV"
+          href={language === 'pl' ? cv : cvEnglish}
+          download
+        >
           CV
         </a>
       </Tooltip>
