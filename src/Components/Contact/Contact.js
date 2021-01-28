@@ -19,12 +19,18 @@ const Contact = ({ language }) => {
   const [modalOpen, setModalOpen] = useState(false);
   const [submitProcessing, setSubmitProcessing] = useState(false);
   const [submitMessage, setSubmitMessage] = useState(false);
+  const [submitSuccess, setSubmitSuccess] = useState(false);
 
   const handleEmailSubmit = (e) => {
     e.preventDefault();
     setModalOpen(true);
     setSubmitProcessing(true);
-    sendForm('gma', 'template_vegeglh', e.target, 'user_0synUJOJ7grlbPr8Dx8rD')
+    sendForm(
+      'gmail',
+      'template_vegeglh',
+      e.target,
+      'user_0synUJOJ7grlbPr8Dx8rD'
+    )
       .then(() => {
         setSubmitProcessing(false);
         const message =
@@ -32,6 +38,7 @@ const Contact = ({ language }) => {
             ? 'Wiadomość została wysłana!'
             : 'Message sent successfully!';
         setSubmitMessage(message);
+        setSubmitSuccess(true);
       })
       .catch(() => {
         setSubmitProcessing(false);
@@ -40,6 +47,7 @@ const Contact = ({ language }) => {
             ? 'Błąd podczas wysyłania. Spróbuj ponownie!'
             : 'Error while submitting. Plesae try again!';
         setSubmitMessage(message);
+        setSubmitSuccess(false);
       });
     e.target.reset();
   };
@@ -116,8 +124,7 @@ const Contact = ({ language }) => {
           <Spinner />
         ) : (
           <div className="Contact__ModalContent">
-            {submitMessage ===
-            ('Message sent successfully!' || 'Wiadomość została wysłana!') ? (
+            {submitSuccess ? (
               <CheckCircleOutline
                 style={{ fontSize: '2.3rem', color: 'green' }}
               />
