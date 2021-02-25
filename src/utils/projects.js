@@ -12,6 +12,7 @@ import {
   rwd,
   rest,
   sass,
+  figma,
 } from '../assets/img/skills';
 
 import {
@@ -24,11 +25,13 @@ import {
   teamManager3,
   insta1,
   insta2,
-  psd1,
-  psd2,
   worldCountries1,
   worldCountries2,
   worldCountries3,
+  bartster1,
+  bartster2,
+  accountingOffice1,
+  accountingOffice2,
 } from '../assets/img/projects-screens/index';
 
 export const teamManager = {
@@ -67,6 +70,41 @@ export const worldCountries = {
   number: 2,
 };
 
+export const accountingOffice = {
+  title: {
+    PL: 'Strona internetowa - Biuro rachunkowe',
+    ENG: 'Accounting office website',
+  },
+  description: {
+    PL:
+      'Strona - wizytówka dla firmy, przedstawiająca jej działalność i umożliwiająca kontakt mailowy. Realizacja wszystkich etapów powstawania strony, włącznie z tworzeniem layoutu i umieszczeniem strony na płatnym hostingu.',
+    ENG: `Website for a company that presents it's activity and allows to contact the company via email. Took charge of all stages of delivering a product, from gathering requirements, through designing an interface, implementing code and deploying.`,
+  },
+  screens: [accountingOffice1, accountingOffice2],
+  technologies: [html, css, javascript, rwd, figma],
+  figma,
+  live: ['https://mc-biuro.pl/'],
+  github: '',
+  number: 3,
+};
+
+export const bartster = {
+  title: {
+    PL: 'Strona internetowa - Akcesoria do samochodów',
+    ENG: 'Vehicle accesories website',
+  },
+  description: {
+    PL:
+      'Strona - wizytówka dla firmy, przedstawiająca jej działalność i umożliwiająca kontakt mailowy. Realizacja wszystkich etapów powstawania strony, włącznie z tworzeniem layoutu i umieszczeniem strony na płatnym hostingu.',
+    ENG: `Website for a company that presents it's activity and allows to contact the company via email. Took charge of all stages of delivering a product, from gathering requirements, through designing an interface, implementing code and deploying.`,
+  },
+  screens: [bartster1, bartster2],
+  technologies: [html, css, javascript, rwd, figma],
+  live: ['https://bartster4x4.pl/'],
+  github: '',
+  number: 4,
+};
+
 export const solarSystem = {
   title: {
     PL: 'Układ Słoneczny',
@@ -82,7 +120,7 @@ export const solarSystem = {
   technologies: [html, css, javascript],
   live: ['https://solar-system-model.netlify.app'],
   github: 'https://github.com/JakubKonefal/Solar-system',
-  number: 3,
+  number: 5,
 };
 
 export const chatApp = {
@@ -100,7 +138,7 @@ export const chatApp = {
   technologies: [html, css, javascript, react, nodejs, express, socketio, rwd],
   live: ['https://chat-app3737.netlify.app/'],
   github: 'https://github.com/JakubKonefal/Chat-App',
-  number: 4,
+  number: 6,
 };
 
 export const instaClone = {
@@ -128,34 +166,15 @@ export const instaClone = {
   ],
   live: ['https://insta-clone37.netlify.app/'],
   github: 'https://github.com/JakubKonefal/insta-clone',
-  number: 5,
-};
-
-export const psdToHtml = {
-  title: {
-    PL: 'Szablony WWW',
-    ENG: 'WWW Templates',
-  },
-  description: {
-    PL:
-      'Responsywne szablony stron internetowych stworzonych na podstawie plików PSD.',
-    ENG: 'Responsive website templates based on PSD files.',
-  },
-  screens: [psd1, psd2],
-  technologies: [html, css, javascript, rwd],
-  live: [
-    'https://company-template-psd.netlify.app/',
-    'https://blog-template-psd.netlify.app/',
-  ],
-  github: 'https://github.com/JakubKonefal/WWW-templates',
-  number: 6,
+  number: 7,
 };
 
 export const projects = [
   teamManager,
   worldCountries,
+  accountingOffice,
+  bartster,
   solarSystem,
   chatApp,
   instaClone,
-  psdToHtml,
 ];

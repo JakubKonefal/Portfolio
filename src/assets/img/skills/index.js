@@ -14,3 +14,4 @@ export const rwd = require('./rwd.svg');
 export const sass = require('./sass.svg');
 export const socketio = require('./socketio.svg');
 export const chartjs = require('./chartjs.svg');
+export const figma = require('./figma.svg');

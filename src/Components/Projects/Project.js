@@ -54,9 +54,11 @@ const Project = ({
               <a className="Project__Link" href={currentLink}>
                 <LiveTvOutlined /> Live
               </a>
-              <a className="Project__Link" href={github}>
-                <GitHub /> Github
-              </a>
+              {github ? (
+                <a className="Project__Link" href={github}>
+                  <GitHub /> Github
+                </a>
+              ) : null}
             </div>
           </div>
         </div>

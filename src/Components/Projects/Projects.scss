@@ -139,7 +139,7 @@
 
   .Projects__Numbers {
     @include flexCenter(row);
-    margin: 1em 0 0 50%;
+    margin: 1em 0 0 40%;
     border-bottom: 2px solid $color2;
   }
 
@@ -159,5 +159,11 @@
 
   .Projects__Number {
     font-size: 1.65rem;
+  }
+}
+
+@media (max-width: 375px) and (orientation: portrait) {
+  .Projects__Numbers {
+    margin: 1em 0 0 20%;
   }
 }

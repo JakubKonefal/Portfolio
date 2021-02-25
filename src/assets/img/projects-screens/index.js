@@ -12,3 +12,7 @@ export const psd2 = require('./psd-2.png');
 export const worldCountries1 = require('./world-countries-1.png');
 export const worldCountries2 = require('./world-countries-2.png');
 export const worldCountries3 = require('./world-countries-3.png');
+export const bartster1 = require('./bartster-1.png');
+export const bartster2 = require('./bartster-2.png');
+export const accountingOffice1 = require('./accounting-office-1.png');
+export const accountingOffice2 = require('./accounting-office-2.png');
